@@ -1,0 +1,2 @@
+D:/belajar coding/Flutter/project_uts/android/app/.cxx/Debug/4d5013o4/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/belajar coding/Flutter/project_uts/android/app/.cxx/Debug/4d5013o4/arm64-v8a/CMakeFiles/rebuild_cache.dir
