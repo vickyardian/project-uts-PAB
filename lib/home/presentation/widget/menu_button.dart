@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 class MenuButton extends StatelessWidget {
   final String? label;
   final String imageLocation;
-  const MenuButton(this.imageLocation, {Key? key, this.label})
-      : super(key: key);
+  const MenuButton(this.imageLocation, {super.key, this.label});
 
   @override
   Widget build(BuildContext context) {

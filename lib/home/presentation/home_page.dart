@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_uts/home/presentation/widget/custom_app_bar.dart';
+import 'package:project_uts/home/presentation/widget/flash_sale.dart';
 import 'package:supercharged/supercharged.dart';
 import 'package:project_uts/home/presentation/widget/menu_button.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -18,7 +19,7 @@ class _MyWidgetState extends State<HomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Container(
+            SizedBox(
               height: MediaQuery.of(context).size.height,
               child: ListView(
                 children: [
@@ -62,13 +63,13 @@ class _MyWidgetState extends State<HomePage> {
                             ),
                           ),
                           SizedBox(
-                            height: 80,
+                            height: 60, //jarak banner ke menu atas
                           )
                         ],
                       ),
                       Positioned(
                         top: 110,
-                        child: Container(
+                        child: SizedBox(
                           width: MediaQuery.of(context).size.width,
                           height: 100,
                           child: ListView(
@@ -84,7 +85,7 @@ class _MyWidgetState extends State<HomePage> {
                                   label: "Rumah Tangga"),
                               MenuButton(
                                 "assets/category-icon/topup.png",
-                                label: "Top Up & Tagihan",
+                                label: "TopUp & Tagihan",
                               ),
                               MenuButton(
                                 "assets/category-icon/elektronik.png",
@@ -135,7 +136,25 @@ class _MyWidgetState extends State<HomePage> {
                         },
                       );
                     }).toList(),
-                  )
+                  ),
+                  SizedBox(height: 15), //Jarak banner ke menu bawah
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      MenuButton("assets/category-icon2/bangga-lokal.png",
+                          label: "Bangga Lokal"),
+                      MenuButton("assets/category-icon2/bazar-hari-ini.png",
+                          label: "Bazar Hari Ini"),
+                      MenuButton("assets/category-icon2/live-shopping.png",
+                          label: "Live Shoppig"),
+                      MenuButton("assets/category-icon2/belanja-harian.png",
+                          label: "Belanja Harian"),
+                      MenuButton("assets/category-icon2/bayar-ditempat.png",
+                          label: "Bayar Ditempat"),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  FlashSale(),
                 ],
               ),
             ),
