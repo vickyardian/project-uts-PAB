@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:supercharged/supercharged.dart';
 import 'package:project_uts/home/presentation/widget/custom_app_bar.dart';
 import 'package:project_uts/home/presentation/widget/flash_sale.dart';
 import 'package:project_uts/home/presentation/widget/menu_button.dart';
