@@ -7,8 +7,7 @@ class ProductThumbnail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(
-          vertical: 10, horizontal: 5), //jarak produk flash sale kesamping
+      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 5),
       height: 230,
       width: 120,
       decoration: BoxDecoration(
@@ -20,12 +19,12 @@ class ProductThumbnail extends StatelessWidget {
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(10), topRight: Radius.circular(10)),
             child: Container(
-              height: 130, //ukuran gambar produk flash sale
+              height: 130,
               width: double.infinity,
               color: Colors.blue,
               child: Image.asset(
                 "assets/product/thumbnailproduct.jpg",
-                fit: BoxFit.cover, //ukuran gambar produk flash sale
+                fit: BoxFit.cover,
               ),
             ),
           ),
@@ -51,26 +50,28 @@ class ProductThumbnail extends StatelessWidget {
                 SizedBox(
                   width: 5,
                 ),
-                Text("Rp 190.000",
-                    style: TextStyle(
-                        fontSize: 10,
-                        decoration: TextDecoration.lineThrough,
-                        color: Colors.grey))
+                Text(
+                  "Rp 200.000",
+                  style: TextStyle(
+                      fontSize: 10,
+                      decoration: TextDecoration.lineThrough,
+                      color: Colors.grey),
+                )
               ],
             ),
           ),
           SizedBox(
-            height: 2, //jarak rp 0 ke 100%
+            height: 2,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
             child: Text(
-              "Rp 0",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+              "Rp 100.000",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
             ),
           ),
           SizedBox(
-            height: 2, //batas
+            height: 2,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
@@ -86,13 +87,13 @@ class ProductThumbnail extends StatelessWidget {
                 ),
                 Text(
                   "Surabaya",
-                  style: TextStyle(fontSize: 12),
+                  style: TextStyle(fontSize: 10),
                 ),
               ],
             ),
           ),
           SizedBox(
-            height: 8, //batas
+            height: 5,
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -103,17 +104,15 @@ class ProductThumbnail extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 5,
+            height: 2,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 8.0),
-            child: Text(
-              "Segera habis",
-              style: TextStyle(
-                  color: Colors.redAccent,
-                  fontSize: 9,
-                  fontWeight: FontWeight.bold),
-            ),
+            child: Text("Segera habis",
+                style: TextStyle(
+                    color: Colors.redAccent,
+                    fontSize: 9,
+                    fontWeight: FontWeight.bold)),
           )
         ],
       ),
