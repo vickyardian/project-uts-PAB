@@ -4,6 +4,7 @@ import 'package:project_uts/home/presentation/widget/custom_app_bar.dart';
 import 'package:project_uts/home/presentation/widget/flash_sale.dart';
 import 'package:project_uts/home/presentation/widget/menu_button.dart';
 import 'package:project_uts/home/presentation/widget/bottom_navbar.dart';
+import 'package:project_uts/home/presentation/widget/product_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -137,6 +138,7 @@ class HomeContent extends StatelessWidget {
 
                 // Flash Sale
                 FlashSale(),
+                ProductList(),
               ],
             ),
           ),
