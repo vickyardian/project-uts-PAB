@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_uts/home/presentation/widget/countdown_widget.dart';
-import 'package:project_uts/home/presentation/widget/product_thumbnail.dart';
+import 'package:Tokopedia/home/presentation/widget/countdown_widget.dart';
+import 'package:Tokopedia/home/presentation/widget/product_thumbnail.dart';
 
 class FlashSale extends StatelessWidget {
   const FlashSale({super.key});

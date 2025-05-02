@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:project_uts/home/presentation/widget/custom_app_bar.dart';
-import 'package:project_uts/home/presentation/widget/flash_sale.dart';
-import 'package:project_uts/home/presentation/widget/menu_button.dart';
-import 'package:project_uts/home/presentation/widget/bottom_navbar.dart';
-import 'package:project_uts/home/presentation/widget/product_list.dart';
+import 'package:Tokopedia/home/presentation/widget/custom_app_bar.dart';
+import 'package:Tokopedia/home/presentation/widget/flash_sale.dart';
+import 'package:Tokopedia/home/presentation/widget/menu_button.dart';
+import 'package:Tokopedia/home/presentation/widget/bottom_navbar.dart';
+import 'package:Tokopedia/home/presentation/widget/product_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
